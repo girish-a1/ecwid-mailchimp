@@ -24,15 +24,15 @@ limitations under the License.
 		<version>7</version>
 	</parent>
   
-	<groupId>com.ecwid</groupId>
+	<groupId>com.agilone</groupId>
 	<artifactId>ecwid-mailchimp</artifactId>
-	<version>1.3.0.6-SNAPSHOT</version>
+	<version>1.3.0.6-a1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>MailChimp API Wrapper</name>
 	<description>MailChimp API Wrapper for Java</description>
-	<url>https://github.com/Ecwid/ecwid-mailchimp</url>
-	<inceptionYear>2012</inceptionYear>
+	<url>https://github.com/Agilone/ecwid-mailchimp</url>
+	<inceptionYear>2013</inceptionYear>
 
 	<organization>
 		<name>Ecwid, Inc</name>
@@ -59,6 +59,10 @@ limitations under the License.
 			<name>Matt Farmer</name>
 			<email>matt@frmr.me</email>
 		</contributor>
+        <contributor>
+            <name>Ergin Demirel</name>
+            <email>ergin.demirel@agilone.com</email>
+        </contributor>
 	</contributors>
 
 	<licenses>

@@ -15,6 +15,8 @@
  */
 package com.ecwid.mailchimp.connection;
 
+import com.ecwid.mailchimp.MailChimpException;
+
 import java.io.Closeable;
 import java.io.IOException;
 
@@ -22,6 +24,7 @@ import java.io.IOException;
  * Abstract connection manager to access MailChimp API service point.
  * 
  * @author Vasily Karyaev <v.karyaev@gmail.com>
+ * @author Ergin Demirel
  */
 public interface MailChimpConnectionManager extends Closeable {
 	
@@ -37,4 +40,17 @@ public interface MailChimpConnectionManager extends Closeable {
 	 * or if the service point response was unsuccessful (>= 300 status code)
 	 */
 	public String post(String url, String payload) throws IOException;
+
+
+    /**
+     * Make a GET request to MailChimp API service point and return result
+     * in a file
+     *
+     * @param url      URL to post data
+     * @param path     path to store data
+     * @param fileName file name that holds request
+     * @return         full file path as a string
+     * @throws IOException
+     */
+    public String getAsFile(String url, String path, String fileName) throws IOException, MailChimpException;
 }

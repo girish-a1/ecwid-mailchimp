@@ -20,6 +20,7 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Map;
 
 /**
  * Implementation of {@link MailChimpConnectionManager}
@@ -52,8 +53,14 @@ public class JavaNetURLConnectionManager implements MailChimpConnectionManager  
 		}
 		return sb.toString();
 	}
-	
-	@Override
+
+    @Override
+    public String getAsFile(String url, String path, String fileName) throws IOException {
+        throw new UnsupportedOperationException("Method for this connection manager is not available!");
+    }
+
+
+    @Override
 	public void close() throws IOException {
 		if (conn != null) {
 			conn.disconnect();
