@@ -53,7 +53,7 @@ public class AccountDetails extends MailChimpObject {
 	public Integer plan_high;
 
 	@Field
-	public Date plan_start_date;
+	public String plan_start_date;
 
 	@Field
 	public Integer emails_left;
